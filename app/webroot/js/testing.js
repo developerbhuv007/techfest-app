@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$('h1').click(function(){
+		$('.form_two').hide();
+		$('.form_one').show();
+	});	
+	$('h2').click(function(){
+		$('.form_one').hide();
+		$('.form_two').show();
+	});	
+});

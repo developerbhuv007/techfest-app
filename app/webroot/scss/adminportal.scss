@@ -1,0 +1,1343 @@
+*{
+	font-family: ffmly;
+}
+@font-face{
+	font-family:ffmly;
+	src:url(../fonts/AMERSN__.ttf);
+}
+body{
+	margin: 0;
+	padding: 0;
+	&::-webkit-scrollbar{
+		width:0px;
+	}
+	overflow-y:hidden;
+	.main_head{
+		min-height: 50px;
+		background-color: rgba(0,0,0,0.9);
+		font-size: 20px;
+		color: white;
+		padding-left: 35px;
+		padding-top: 10px;
+		.logo{
+				width: 110px;
+				height: 100px;
+				z-index: 2;
+				right:25px;
+				cursor: pointer;
+				position: absolute;
+				top: 0px;
+				padding-top: 0;
+				background: url(../img/logo-ribbon.png) no-repeat 50% 100%;
+				padding: 10px 0 70px 0;
+				background-size: 110px 135px;
+				-webkit-transition: .1s ease-in-out;
+				-moz-transition: .1s ease-in-out;
+				-o-transition: .1s ease-in-out;
+				transition: .1s ease-in-out;
+				float: left;
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 95%;
+					padding-left: 10px;
+					-webkit-transition: .1s ease-in-out;
+					-moz-transition: .1s ease-in-out;
+					-o-transition: .1s ease-in-out;
+					transition: .1s ease-in-out;
+				}
+		}
+		.logout{
+			height: 30px;
+			background-color: #99f;
+			color: #fff;
+			border-radius: 15px; 
+			font-size: 15px;
+			border-bottom: 5px solid #77d;
+			cursor: pointer;
+			float: right;
+			padding: 3px 8px 3px 8px;
+		}
+	}
+	.left_bar{
+		min-height: 631px;
+		background-color: rgba(0,0,0,0.7);
+		color: white;
+		padding: 0;
+		overflow-y: auto;
+		overflow-x: hidden; 
+		font-family: Gabriola;
+		&::-webkit-scrollbar{
+			width:2px;
+		}
+		&::-webkit-scrollbar-thumb{
+			background-color: #f4f4fc;
+		}		
+		&::-webkit-scrollbar-track{
+			background-color: #f4f4fc;
+		}
+		&::-webkit-scrollbar:hover{
+			cursor: pointer;
+		}
+		.aimg{
+			height: auto;
+			//padding-bottom: 80px;
+			padding-top: 30px;
+			text-align: center;
+			img{
+				height: 140px;
+				width: 140px;
+				border: 3px solid white;
+			}
+			.lpic{
+				margin: auto;
+			}
+		}
+		.userPicname{
+			font-size: 30px;
+			text-align: center;
+			color: white;
+			padding-bottom: 25px;
+		}
+		.LperTab{
+			min-height: 35px;
+			text-align: center;
+			color: white;
+			font-size: 18px;
+			padding-top: 5px;
+			cursor: pointer;
+		}
+		.LperTab:hover{
+			background-color: #f4f4fc;
+			color: black;
+		}
+	}
+	.right_bar{
+		position:relative;
+		height: 634px;
+		background-color: #f4f4fc;
+		color: white;
+		overflow: auto;
+		padding: 0;
+		.panel-resize-handle{
+			display: none !important;
+		}
+		.debug-timers{
+				display: none;
+		}
+		.fixied{
+			position: fixed;
+			height: 600px;
+			img{
+				opacity: 0.2;
+				height: 420px;
+				width: 700px;
+				margin-left: 32%;
+				margin-top: 5%;
+			}
+		}
+		&::-webkit-scrollbar{
+			width:8px;
+		}
+		&::-webkit-scrollbar-thumb{
+			background-color: rgba(0,153,255,1);
+		}		
+		&::-webkit-scrollbar-track{
+			background-color: rgba(200,200,200,1);
+		}
+		&::-webkit-scrollbar:hover{
+			cursor: pointer;
+		}
+		.headingofTab{
+			min-height: 30px;
+			color: #003CFF;
+			text-indent: 21%;
+			border-radius: 5px;
+			margin-top: 15px;
+			font-size: 28px;
+		}
+		.Eperdiv{
+			min-height: 30px;
+			margin-top: 20px;
+			.Fvalidation{
+				height:auto; 
+				width:auto; 
+				color:red;
+				font-size:18px;
+				font-weight: 600;
+				padding-top: 4px;
+				display: none;				
+			}
+			.endspace{
+				padding-bottom: 40px;
+			}
+			.forimg{
+					opacity: 0;
+					height: 0;
+			}
+			.upload{
+				min-height: 38px;
+				font-family: Gabriola;
+				color: black;
+				margin-left: 11%;
+				font-size: 15px;
+				width: 140px;
+				padding: 0;
+				.Ebutton_click_uplodephoto{
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					text-align: center;
+					color: black;
+					padding-top: 6px;
+				}
+			}
+			.label{
+				min-height: 30px;
+				text-align: right;
+				padding-right: 20px;
+				font-weight: 400;
+				border-radius: none;
+				font-size: 15px;
+				padding-top: 6px;
+				color: black;
+				.spanred{
+					color: red !important;
+				}
+			}
+			.right{
+				min-height: 30px;
+				input[type=submit]{
+					height: 30px;
+					width: auto;
+					padding: 0px 15px 3px 15px;
+					font-size: 20px;
+					border-radius: 4px;
+					margin-left: 80%;
+					background-color: #003CFF;
+				}
+				.Fvalidation{
+					height:auto; 
+					width:auto; 
+					color:red;
+					font-size:18px;
+					font-weight: 600;
+					padding-top: 4px;
+				}
+				.textwidth{
+					width: 250px;
+					height: 28px;
+				}
+				input{
+					font-size: 15px;
+				}
+				.form-control{
+					padding: 0px 12px !important;
+				}
+				textarea{
+					min-height: 148px;
+					min-width: 500px;
+					max-height: 148px;
+					max-width: 500px;
+					font-size: 15px;
+					color: black;
+				}
+				.textareawidth{
+					padding-top: 5px !important;
+				}
+				select{
+					font-size: 13px;
+				}
+				button{
+					float: right;
+					margin-right: 12%;
+				}
+				#submit_event{
+					margin-bottom: 50px;
+				}
+			}
+		}
+
+		.MainAbout_jnanagni{
+			color: black;
+			.AboutJnanagni_perdiv{
+				margin-top: 25px;
+				input[type=submit] {
+					margin-top: 20px;
+					margin-left: 68% !important;
+				}
+				.label{
+					font-size: 15px;
+					color: black;
+					font-weight: 500;
+					text-align: left;
+					padding-left: 20%;
+					strong{
+						color: red;
+					}
+				}
+				.right{
+					.for_width{
+						height: 150px;
+						width: 100%;
+						font-size: 15px;
+					}
+					.form-control{
+						height: 150px;
+						padding: 5px 12px !important;
+					}
+				}
+				.Fvalidation{
+					color: red;
+					font-size: 16px;
+					padding-top: 5px;
+					font-weight: 600;
+					display: none;
+				}
+				.btn-warning{
+					margin-left: 20%;
+					font-size: 19px;
+					margin-top: -10px;
+					margin-left: 19%;
+				}
+				.btn-primary{
+					font-size: 18px;
+					margin-left: 60%;
+					margin-bottom: 100px;
+				}
+			}
+
+		}
+
+		.adminANDorganisers{
+			color: black;
+			p{
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			.Admin_organiser_table{
+				margin-top: 10px;
+			}
+			table tr td{
+				font-size: 15px;
+				padding: 3px 6px 3px 6px;
+				color: black;
+				cursor: pointer;
+			}
+			.addAdminDiv{
+				.admin_add_button{
+					margin-top: 20px;
+					margin-left: 42%;
+					padding: 3px 20px 3px 20px;
+					font-size: 18px;
+				}
+				span{
+					margin-top: -20px;
+					padding-right: 2px;
+				}
+			}
+			.add_admin_perdiv{
+				margin-top: 25px;
+				.fontaddsize{
+					font-family: ffmly;
+				}
+				.label{
+					font-size: 15px;
+					color: black;
+					text-align: left;
+					padding-left: 20%;
+					strong{
+						color: red;
+					}
+				}
+				.right{
+					.for_width{
+						width: 100%;
+						font-size: 15px;
+					}
+					.form-control{
+						height: 31px;
+						padding: 0px 12px !important;
+					}
+					select{
+						font-size: 13px;
+					}
+				}
+				.Fvalidation{
+					color: red;
+					font-size: 16px;
+					padding-top: 5px;
+					font-weight: 600;
+					display: none;
+				}
+				.btn-warning{
+					margin-left: 20%;
+					font-size: 15px;
+					margin-top: -10px;
+					margin-left: 19%;
+				}
+				.btn-primary{
+					font-size: 18px;
+					margin-left: 60%;
+					margin-bottom: 100px;
+				}
+				input[type=file] {
+					display: block;
+					margin-left: 20% !important;
+					display: none;
+				}
+			}
+		}
+
+		.MainEvet_deatils{
+			color: black;
+			p{
+				cursor: pointer;
+			}
+			.detailshoeEventList{
+				color: black;
+				table tr td{
+					font-size: 18px;
+					padding: 3px 6px 3px 6px;
+					color: black;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.Admin_Organisers{
+			color: black;
+			.forhidden{
+				display: none !important;
+			}
+			.debug-table{
+				display: none !important;
+			}
+			.Admin_organiser_table{
+				margin-top: 20px;
+			}
+			table tr td{
+				font-size: 18px;
+				padding: 3px 6px 3px 6px;
+				color: black;
+				cursor: pointer;
+			}
+			.addAdminDiv{
+				.admin_add_button{
+					margin-top: 20px;
+					margin-left: 42%;
+					padding: 3px 20px 3px 20px;
+					font-size: 20px;
+				}
+				span{
+					margin-top: -20px;
+					padding-right: 2px;
+				}
+			}
+			.add_admin_perdiv{
+				margin-top: 25px;
+				.label{
+					font-size: 20px;
+					color: black;
+					text-align: left;
+					padding-left: 20%;
+					strong{
+						color: red;
+					}
+				}
+				.right{
+					.for_width{
+						width: 100%;
+						font-size: 20px;
+					}
+					.form-control{
+						height: 31px;
+						padding: 0px 12px !important;
+					}
+				}
+				.Fvalidation{
+					color: red;
+					font-size: 16px;
+					padding-top: 5px;
+					font-weight: 600;
+					display: none;
+				}
+				.btn-warning{
+					margin-left: 20%;
+					font-size: 19px;
+					margin-top: -10px;
+					margin-left: 19%;
+				}
+				.btn-primary{
+					font-size: 18px;
+					margin-left: 60%;
+					margin-bottom: 100px;
+				}
+				input[type=file] {
+					display: block;
+					margin-left: 20% !important;
+					display: none;
+				}
+			}
+		}
+
+		.Event_list{
+			padding-bottom: 0;
+			width: 100%;
+			color: black;
+			.allEvents{
+				min-height: 600px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				width: 30%;
+				padding: 0;
+				padding-top: 30px;
+				&::-webkit-scrollbar{
+					width:5px;
+				}
+				&::-webkit-scrollbar-thumb{
+					background-color: rgba(0,153,255,1);
+				}		
+				&::-webkit-scrollbar-track{
+					background-color: green;
+				}
+				&::-webkit-scrollbar:hover{
+					cursor: pointer;
+				}
+				.headings_div{
+					width: 100%;
+					padding: 0;
+					.list_perdiv{
+						padding: 0;
+						.smallfont{
+							font-size: 20px !important;
+						}
+						.serialno{
+							padding:3px 0 0 23px !important; 
+						}
+						.eventNamealign{
+							text-align: left !important;
+						}
+						.snoDiv{
+							min-height:30px;
+							width: 33%;
+							padding: 3px 0 0 20px;
+							font-size: 22px;
+						}
+						.eventName{
+							min-height: 30px;
+							width: 67%;
+							padding: 3px 3px 3px 10px;
+							font-size: 22px;
+							cursor: pointer;
+
+						}
+						.delete_eventList{
+								float: right;
+								z-index: 2;
+								margin-top: -22px;
+								font-family: 'Glyphicons Halflings' !important;
+								opacity: 0.8;
+							}
+					}
+				}
+			}
+			.oneEvent{
+				width: 82%;
+				float: left;
+				.debug-timers{
+					display: none;
+				}
+				.eventList_table{
+					height: 26px;
+					font-size: 15px;
+					p{
+						cursor: pointer;
+					}
+				}
+				.listevent_heading{
+					font-size: 20px;
+					padding-top: 10px;
+					text-align: center;
+				}
+				.eventListHeader{
+					border-bottom: 1px solid silver;
+					padding-bottom: 5px;
+					.leftDiv{
+							img{
+								margin-top: 20px;
+								max-width: 100px !important;
+								max-height: 80px !important;
+							}						
+					}
+					.centerDiv{
+						font-size: 24px;
+						padding-top: 40px;
+						text-align: center;
+					}
+					.rightDiv{
+						padding-top: 3px;
+						text-align: center;
+						font-size: 15px;
+						padding: 0;
+						.oraniserListPhoto{
+							padding: 0;
+							text-align: right;
+							img{
+								min-height: 84px;
+								margin-top: 6px;
+								max-width: 80px !important;
+								max-height: 84px !important
+							}
+						}
+						.about_oraniserListPhoto{
+							padding: 0;
+							padding-left: 3px;
+							text-align: left;
+							.organiserName{
+								font-size: 18px;
+								text-align: left;
+								padding-left: 15px;	
+							}
+							.contactNo{
+								text-align: left;
+								padding-left: 15px;
+							}
+						}
+						
+					}
+				}
+				.listiinDetails_heading{
+					border-bottom: none !important;
+					.Admin_organiser_table{
+						display: none;
+					}
+					.debug-table{
+						display: none;
+					}
+					table tr td{
+						font-size: 15px;
+						padding: 3px 6px 3px 6px;
+						color: black;
+					}
+					/**.listDetail_oneline{
+						padding: 0;
+						border-bottom: 1px solid silver;
+						.headContent {
+							font-size: 20px;
+						}
+						.list_sno{
+							border-right: 1px solid silver;
+						}
+						.list_name{
+							border-right: 1px solid silver;
+						}
+						.list_mobile{
+							border-right: 1px solid silver;
+						}
+						.list_email{
+							border-right: 1px solid silver;
+						}
+						.list_Institute{
+							border-right: 1px solid silver;
+						}
+						.list_City{
+						}
+
+					}
+					**/
+				}
+			}
+		}
+
+		.MainOrganiser{
+			padding:0;	
+			padding-top: 30px;			
+			.Operdiv{
+				min-height: 30px;
+				margin-top: 30px;
+				.Obutton_click_uplodephoto{
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					text-align: center;
+					color: black;
+					padding-top:4px;
+				}
+				.Fvalidation{
+					height:auto; 
+					width:auto; 
+					color:red;
+					font-size:12px;
+					padding-top: 4px;	
+				}
+				.Orgniser_validation{
+						display: none;
+				}
+
+				.endspace{
+					padding-bottom: 40px;
+				}
+				.forOimg{
+					opacity: 0;
+					height: 0;
+				}
+				.Oupload{
+					font-family: Gabriola;
+					color: black;
+					height: 32px;
+					width: 130px;
+					padding-top: 2px;
+					margin-left: 12%;
+					font-size: 20px;
+					font-weight: 700;
+					padding: 0;
+				}
+				.label{
+					min-height: 30px;
+					text-align: right;
+					padding-right: 20px;
+					font-weight: 400;
+					border-radius: none;
+					font-size: 20px;
+					font-weight: 700;
+					padding-top: 6px;
+					font-family: Gabriola;
+					color: black;
+				}
+				.right{
+					min-height: 30px;
+					input[type=submit]{
+						width: auto;
+						line-height: 1.42857143;
+						text-align: center;
+						padding: 0px 12px;
+						font-size: 21px;
+						border: 1px solid transparent;
+						border-radius: 4px;
+						margin-left: 78%;
+						color: #fff;
+						background-color: #5bc0de;
+						border-color: #46b8da;
+					}
+					.Fvalidation{
+						height:auto; 
+						width:auto; 
+						color:red;
+						font-size:12px;
+						padding-top: 4px;						
+					}
+					.textwidth{
+						width: 250px;
+						height: 28px;
+					}
+					input{
+						font-family: Gabriola;
+						font-size: 18px;
+					}
+					.form-control{
+						padding: 3px 12px !important;
+					}
+					button{
+						float: right;
+						margin-right: 41%;
+					}
+				}
+			}
+		}
+
+		.MainHospitality{
+			padding: 0;
+			.firstpadding{
+				padding-top: 30px;
+			}
+			.Registration_charge{
+				min-height: 30px; 
+				font-size: 20px;
+				color: black;
+				cursor: pointer;
+				.pointstext{
+					padding: 0;
+					text-align: right;
+				}
+				.content{
+
+				}
+				.RCperdiv{
+					.label{
+						min-height: 30px;
+						text-align: right;
+						padding-right: 20px;
+						font-weight: 500;
+						font-size: 15px;
+						padding-top: 6px;
+						color: black;
+					}
+					.text{
+						.textwidth{
+							width: 250px;
+							height: 28px;
+						}
+						input{
+							font-size: 15px;
+						}
+						.form-control{
+							padding: 0px 12px !important;
+						}
+						textarea{
+							min-height: 148px;
+							min-width: 500px;
+							max-height: 148px;
+							max-width: 500px;
+							font-weight: 500;
+							font-size: 15px;
+							color: black;
+						}
+					}
+					.textareawidth{
+						font-weight: 500;
+						padding-top: 5px !important;
+					}
+				}
+			}
+			.Accomodation_charge{
+				min-height: 30px;
+				font-size: 20px;
+				color: black;
+				cursor: pointer;
+				.Apointstext{
+					padding: 0;
+					text-align: right;
+				}
+				.Acontent{
+
+				}
+				.ACperdiv{
+					margin-top: 15px;
+					.label{
+						min-height: 30px;
+						text-align: right;
+						padding-right: 20px;
+						font-weight: 500;
+						font-size: 15px;
+						padding-top: 6px;
+						color: black;
+					}
+					.text{
+						.textwidth{
+							width: 250px;
+							height: 28px;
+						}
+						input{
+							font-size: 15px;
+						}
+						.form-control{
+							padding: 0px 12px !important;
+						}
+					}
+				}
+			}
+			.Cultural_Night_charge{
+				min-height: 30px;
+				font-size: 20px;
+				color: black;
+				cursor: pointer;
+				.Cpointstext{
+					padding: 0;
+					text-align: right;
+				}
+				.Ccontent{
+
+				}
+				.CNCperdiv{
+					margin-top: 15px;
+					.label{
+						min-height: 30px;
+						text-align: right;
+						padding-right: 20px;
+						font-weight: 500;
+						font-size: 15px;
+						padding-top: 6px;
+						color: black;
+					}
+					.text{
+						.textwidth{
+							width: 250px;
+							height: 28px;
+						}
+						input{
+							font-size: 15px;
+						}
+						.form-control{
+							padding: 0px 12px !important;
+						}
+						textarea{
+							min-height: 100px;
+							min-width: 300px !important;
+							max-height: 100px;
+							max-width: 300px !important;
+							font-size: 15px;
+							color: black;
+						}
+					}
+					.textareawidth{
+						font-weight: 500;
+					}
+				}
+			}
+			.ReachFet_charge{
+				min-height: 30px;
+				font-size: 20px;
+				color: black;
+				cursor: pointer;
+				.Rpointstext{
+					padding: 0;
+					text-align: right;
+				}
+				.Rcontent{
+
+				}
+				.RFperdiv{
+					margin-top: 15px;
+					padding-bottom: 30px;
+					button{
+						margin-bottom: 40px;
+						margin-left: 73%;
+					}
+					.label{
+						min-height: 30px;
+						text-align: right;
+						padding-right: 20px;
+						font-weight: 500;
+						font-size: 15px;
+						padding-top: 6px;
+						color: black;
+					}
+					.text{
+						textarea{
+							min-height: 148px;
+							min-width: 500px;
+							max-height: 148px;
+							max-width: 500px;
+							font-size: 15px;
+							color: black;
+						}
+						.smtextareawidth{
+							min-height: 100px;
+							min-width: 300px;
+							max-height: 100px;
+							max-width: 300px;
+							font-size: 15px;
+							font-weight: 500;
+							color: black;
+						}
+						.textwidth{
+							width: 250px;
+							height: 28px;
+						}
+						input{
+							font-size: 15px;
+						}
+						.form-control{
+							padding: 0px 12px !important;
+						}
+					}
+				}
+				.btnMOT{
+					min-height: 15px;
+					font-size: 20px;
+					text-align: center;
+					border-radius: 5px;
+					background-color: #003d4c !important;
+					color: white ;
+					cursor: pointer;
+					margin-top: 20px;
+				}
+			}
+			.hospitalityspace{
+				margin-top: 25px;
+				margin-bottom: 50px;
+			}
+		}
+
+		.MainSponsers{
+			.firstpadding{
+				padding-top: 20px;
+			}
+			.SponsersTab{
+				min-height: 30px;
+				font-size: 20px;
+				color: black;
+				cursor: pointer;
+				.numbertext{
+					padding: 0;
+					text-align: right;
+				}
+				.headingtext{
+
+				}
+				.megaSH{
+					.SNperdiv{
+						margin-top: 15px;
+						padding-bottom: 5px;
+						.Sponsers_validation{
+							display: none;
+						}
+						.SNbutton_click_uplodephoto{
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							text-align: center;
+							color: black;
+							padding-top:4px;
+						}
+						input[type=submit]{
+							margin-left: 66%;
+						}
+						.Fvalidation{
+							height: auto;
+							width: auto;
+							color: red;
+							font-family: Adobe Naskh Medium;
+							font-size: 20px;
+							padding: 0;
+							padding-left: 5px;
+							padding-top: 4px;	
+						}
+						button{
+							margin-left: 65%;
+						}
+						.forMSimg{
+								opacity: 0;
+								height: 0;
+						}
+						.MSupload{
+							color: black;
+							height: 32px;
+							width: 140px;
+							padding-top: 2px;
+							margin-left: 18%;
+							font-size: 15px;
+							padding: 0;
+						}
+						.label{
+							min-height: 30px;
+							text-align: right;
+							padding-right: 20px;
+							font-weight: 500;
+							font-size: 15px;
+							padding-top: 6px;
+							color: black;
+							strong{
+								color: red;
+							}
+						}
+						.text{
+							input{
+								font-size: 15px;
+							}
+							.form-control{
+								padding: 0px 12px !important;
+							}
+							textarea{
+								min-height: 100px;
+								min-width: 300px;
+								max-height: 100px;
+								max-width: 300px;
+								font-size: 15px;
+								color: black;
+							}
+							.textwidth{
+								width: 300px;
+								height: 28px;
+							}
+						}
+					}
+				}
+				.ourSH{
+					.OPperdiv{
+						margin-top: 15px;
+						padding-bottom: 5px;
+						.OSponsers_validation{
+							display: none;
+						}
+						.OPbutton_click_uplodephoto{
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							text-align: center;
+							color: black;
+							padding-top:4px;
+						}
+						input[type=submit]{
+							margin-left: 66%;
+						}
+						.Fvalidation{
+							height: auto;
+							width: auto;
+							color: red;
+							font-family: Adobe Naskh Medium;
+							font-size: 20px;
+							padding: 0;
+							padding-left: 5px;
+							padding-top: 4px;	
+						}
+						button{
+							margin-left: 65%;
+						}
+						.forOPimg{
+								opacity: 0;
+								height: 0;
+						}
+						.OPupload{
+							color: black;
+							height: 32px;
+							width: 140px;
+							padding-top: 2px;
+							margin-left: 18%;
+							font-size: 15px;
+							padding: 0;
+						}
+						.label{
+							min-height: 30px;
+							text-align: right;
+							padding-right: 20px;
+							font-weight: 500;
+							font-size: 15px;
+							padding-top: 6px;
+							color: black;
+							strong{
+								color: red;
+							}
+						}
+						.text{
+							input{
+								font-family: Gabriola;
+								font-size: 20px;
+							}
+							.form-control{
+								padding: 0px 12px !important;
+							}
+							textarea{
+								min-height: 100px;
+								min-width: 300px;
+								max-height: 100px;
+								max-width: 300px;
+								font-size: 15px;
+								color: black;
+							}
+							.textwidth{
+								width: 300px;
+								height: 28px;
+							}
+						}
+					}
+				}
+				.lastyearSH{
+					.LYSNperdiv{
+						margin-top: 15px;
+						padding-bottom: 5px;
+						.LYSponsers_validation{
+							display: none;
+						}
+						.LYSNbutton_click_uplodephoto{
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							text-align: center;
+							color: black;
+							padding-top:4px;
+						}
+						input[type=submit]{
+							margin-left: 66%;
+						}
+						input{
+							cursor: pointer;
+						}
+						.Fvalidation{
+							height: auto;
+							width: auto;
+							color: red;
+							font-family: Adobe Naskh Medium;
+							font-size: 20px;
+							padding: 0;
+							padding-left: 5px;
+							padding-top: 4px;	
+						}
+						button{
+							margin-left: 65%;
+							margin-bottom: 60px;
+						}
+						.forLYSimg{
+								opacity: 0;
+								height: 0;
+						}
+						.LYSupload{
+							font-family: Gabriola;
+							color: black;
+							height: 32px;
+							width: 140px;
+							padding-top: 2px;
+							margin-left: 18%;
+							font-size: 15px;
+							padding: 0;
+						}
+						.label{
+							min-height: 30px;
+							text-align: right;
+							padding-right: 20px;
+							font-weight: 500;
+							font-size: 15px;
+							padding-top: 6px;
+							color: black;
+							strong{
+								color: red;
+							}
+						}
+						.text{
+							input{
+								font-size: 15px;
+							}
+							.form-control{
+								padding: 0px 12px !important;
+							}
+							textarea{
+								min-height: 100px;
+								min-width: 300px;
+								max-height: 100px;
+								max-width: 300px;
+								font-size: 15px;
+								color: black;
+							}
+							.textwidth{
+								width: 300px;
+								height: 28px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.MainContactus{
+			padding: 0;
+			.heading_contactus{
+				color: #003CFF;
+				text-align: center;
+				padding: 0;
+				font-size: 22px;
+				padding-top: 10px;
+			}
+			.firtstop_space{
+				margin-top: 35px !important;
+			}
+			.contactus_perdiv{
+				padding: 0;
+				margin-top: 20px;
+				.btn-primary{
+						margin-left: 70%;
+				}
+				.contact_label{
+					font-size: 15px;
+					font-weight: 500;
+					padding-top: 2px;						
+					text-align: right; 
+					color: black;
+					strong{
+						color: red;
+					}
+				}
+				.contact_right{
+					min-height: 20px;
+					.form-control{
+						padding: 0px 12px !important;
+					}
+					select{
+						font-size: 13px;
+					}
+					input{
+						font-size: 15px;
+					}
+				}
+				.button{
+					margin-left: 70%;
+				}
+				.Fvalidation{
+					color: red;
+					padding-top: 4px;
+					font-size: 18px;
+					font-weight: 600;
+					display: none;
+				}
+			}
+		}
+		.MainReachus{
+			padding: 0;
+			.heading_reachus{
+				color: #003CFF;
+				text-align: center;
+				padding: 0;
+				font-size: 22px;
+				padding-top: 10px;
+			}
+			.reachus_perdiv{
+				padding: 0;
+				margin-top: 20px;
+				.btn-primary{
+						margin-left: 70%;
+				}
+				.reach_label{
+					font-size: 15px;
+					font-weight: 500;
+					padding-top: 2px;						
+					text-align: right;
+					color: black;
+					strong{
+						color: red;
+					}
+				}
+				.reach_right{
+					padding: 0;
+					min-height: 20px;
+					textarea{
+						min-height: 200px;
+						max-height: 200px;
+						min-width: 470px;
+						max-width: 470px;
+						font-size: 15px;
+					}
+				}
+				.button{
+					margin-left: 72.5%;
+				}
+			}
+			.Fvalidation{
+				color: red;
+				padding-top: 4px;
+				font-size: 18px;
+				font-weight: 600;
+				display: none;
+			}
+		}
+	}
+}
+
+#Jnanagni_Alert_Show{
+  position:fixed;
+  height:700px;
+  width:100%;
+  background-color:rgba(255,255,255,0.7);
+  top:0;
+  left:0;
+  z-index: 99999 !important;
+  display:none;
+}
+#loader_Show{
+  position:fixed;
+  height:700px;
+  width:100%;
+  background-color:rgba(255,255,255,0.7);
+  top:0;
+  left:0;
+  z-index: 99999 !important;
+  display:none;
+}

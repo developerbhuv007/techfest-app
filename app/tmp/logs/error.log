@@ -1,0 +1,27 @@
+2017-05-26 18:48:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/commonstyle.css
+Stack Trace:
+#0 /home/developerbhuv/myprojects/openshiftApps/jnanagni/php/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-26 18:50:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/commonstyle.css
+Stack Trace:
+#0 /home/developerbhuv/myprojects/openshiftApps/jnanagni/php/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-27 12:56:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/commonstyle.css
+Stack Trace:
+#0 /home/developerbhuv/myprojects/openshiftApps/jnanagni/php/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

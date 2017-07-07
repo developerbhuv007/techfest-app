@@ -1,0 +1,3 @@
+	class Kul extends AppModel{
+		public $helper= array('Session');
+	}

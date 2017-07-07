@@ -1,0 +1,35 @@
+*{
+	font-family: ffmly;
+}
+@font-face{
+  font-family:ffmly;
+  src:url(../fonts/AMERSN__.ttf);
+}
+body{
+	background-image: url('../img/dpattern.jpg');
+	text-align: center;
+	.imgdiv{
+		height: 500px;
+		width: 800px;
+		margin-top: 20px !important;
+		margin: auto;	
+		img{
+			height: 500px;
+			width: 100%;
+		}	
+	}
+	.titleDiv{
+		text-align: center;
+		color: orangered;
+		font-size: 30px;
+	}
+	.linkDiv{
+		text-align: center;
+		font-size: 18px;
+		color: white;
+		a{
+			text-decoration: none;
+		}
+	}
+
+}
